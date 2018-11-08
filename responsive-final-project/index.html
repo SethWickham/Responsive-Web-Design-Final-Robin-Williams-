@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive Project</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+</head>
+
+
+<body>
+
+  <!--Navbar-->
+  <nav>
+    <div class="nav-wrapper">
+      <div class="row">
+        <div class="col s12">
+          <a href="https://www.google.com/search?source=hp&ei=soXLW8nKAYHm_QaM57qICA&q=robin+williams+career+highlights&btnK=Google+Search&oq=robin+williams+highli&gs_l=psy-ab.3.1.0j0i22i30.1637.6783..9667...0.0..0.151.2873.0j21......0....1..gws-wiz.......0i131j0i10.krAT3qSsYJ4"
+            class="logo center flow-text">In Loving Memory</a>
+          <a href="#!" data-target="mobile-nav" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <ul class="sidenav" id="mobile-nav">
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+      <a href="portfolio.html">Portfolio</a>
+    </li>
+    <li>
+      <a href="contact.html">Contact</a>
+    </li>
+  </ul>
+
+  <!--Content Container-->
+  <div class="container  grey lighten-4">
+
+    <br>
+
+    <div>
+      <img class="responsive-img" src="http://www.quoteambition.com/wp-content/uploads/2017/04/robin-williams.jpg">
+    </div>
+
+    <div class="flow text center">
+      <p class="title">Robin Williams</p>
+    </div>
+    <div class="col s12 m12 center flow text">
+      <h4>A Little About Robin</h4>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m4  center flow text">
+        <p class="maintext1"><strong>Robin McLaurin Williams</strong> (July 21, 1951 – August 11, 2014) was an American
+          actor and comedian. Born in
+          Chicago, Williams started as a stand-up comedian in San Francisco and Los Angeles in the mid-1970s. He is
+          credited with leading San Francisco's comedy renaissance.</p>
+      </div>
+      <div class="col s12 m4  center flow text">
+        <p class="maintext1">
+          After rising to fame as an alien called Mork in the TV sci-fi sitcom series Mork & Mindy, Williams
+          established a career in both stand-up comedy and feature film acting. He was known for his improvisational
+          skills.</p>
+      </div>
+      <div class="col s12 m4  center flow text">
+        <p class="maintext1">
+          Williams won the 1997 Academy Award for Best Supporting Actor for his performance as psychologist Sean
+          Maguire in Good Will Hunting. He also received two Emmy Awards, seven Golden Globe Awards, two Screen
+          Actors Guild Awards, and four Grammy Awards throughout his career. On August 11, 2014, Williams passed
+          away.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col s12 m4 flow text grey lighten-2">
+      <p class="listFontTitle center">His Skills
+      <ol>
+        <li class="listFont">Improv</li>
+        <li class="listFont">Making many people laugh</li>
+        <li class="listFont">Cartoon voices</li>
+      </ol>
+    </p>
+    </div>
+  </div>
+  </section>
+
+
+  <!--Footer-->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <p class="grey-text text-lighten-4">This Website was created in honor of Robin Williams </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links to Robin Williams Social Media</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://twitter.com/robinwiliiams_?lang=en"><img src="images/twitter.png"></a>
+              <a class="grey-text text-lighten-3" href="https://www.facebook.com/Robin-Williams-1951-2014-1467215200198331/"><img
+                  src="images/fb.png"></a>
+              <a class="grey-text text-lighten-3" href="https://www.instagram.com/therobinwilliams/?hl=en"><img src="images/insta.png"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2018 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">Responsive Web Design Project</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    var elem = document.querySelector('.sidenav');
+    var instance = M.Sidenav.init(elem, {
+      onOpenStart: function () {
+        console.log("I trigger as soon as the page is loaded");
+      },
+      onCloseEnd: function () {
+        console.log("same");
+      }
+    });</script>
+</body>
+
+</html>

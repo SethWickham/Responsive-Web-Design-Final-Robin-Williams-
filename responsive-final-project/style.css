@@ -1,0 +1,55 @@
+.films > img{
+    width: auto;
+    height: 400px;
+}
+
+.maintext1 {
+    font-size: 1.3em
+}
+.maintext2 {
+    font-size: 1.4em
+}
+
+.title {
+    font-size: 4em;
+    font-family: fantasy;
+    font-style: italic
+}
+
+.title2 {
+    font-size: 3.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+.listFont {
+    font-size: 1.7em;
+    font-family: Tahoma, Geneva, 'Verdana', sans-serif
+}
+.listFontTitle {
+    font-size: 2.3em;
+    font-family: Tahoma, Geneva, 'Verdana', sans-serif
+}
+
+   /* Large */
+   .navigation {
+    display: flex;
+    flex-flow: row wrap;
+    /* This aligns items to the end line on main-axis */
+    justify-content: flex-end;
+  }
+  
+  /* Medium screens */
+  @media all and (max-width: 800px) {
+    .navigation {
+        /* When on medium sized screens, we center it by evenly distributing empty space around items */
+        justify-content: space-around;
+    }
+  }
+  
+  /* Small screens */
+  @media all and (max-width: 500px) {
+    .navigation {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
+}
+
